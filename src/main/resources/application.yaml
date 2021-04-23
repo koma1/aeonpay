@@ -1,0 +1,41 @@
+server:
+  port: 8085
+
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:payments_db;LOCK_TIMEOUT=5000;DB_CLOSE_ON_EXIT=FALSE
+    username: ${default.admin.login}
+    password: ${default.admin.password}
+  jpa:
+    show-sql: true
+
+default:
+  login: sa
+  password: as
+  user:
+    login: user
+    password: 123321
+  admin:
+    login: ${default.login}
+    password: ${default.password}
+  cache:
+    heap:
+      size: 500
+
+application:
+  session:
+    tti: 20
+    cache:
+      heap:
+        size: ${default.cache.heap.size}
+  newuser:
+    balance: 8
+  withdraw:
+    amount: 1.1
+  antibrute:
+    attempts: 3
+    ttl: 1
+    cache:
+      heap:
+        size: ${default.cache.heap.size}

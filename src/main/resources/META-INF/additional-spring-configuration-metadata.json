@@ -1,0 +1,74 @@
+{
+  "properties": [
+    {
+      "name": "default.user.login",
+      "type": "java.lang.String",
+      "description": "Login used by default."
+    },
+    {
+      "name": "default.login",
+      "type": "java.lang.String",
+      "description": "Default login."
+    },
+    {
+      "name": "default.password",
+      "type": "java.lang.String",
+      "description": "Default password."
+    },
+    {
+      "name": "default.admin.login",
+      "type": "java.lang.String",
+      "description": "Default administrator login."
+    },
+    {
+      "name": "default.admin.password",
+      "type": "java.lang.String",
+      "description": "Default administrator password."
+    },
+    {
+      "name": "default.user.password",
+      "type": "java.lang.String",
+      "description": "Password used by default."
+    },
+    {
+      "name": "default.cache.heap.size",
+      "type": "java.lang.Integer",
+      "description": "Default heap size for caches."
+    },
+    {
+      "name": "application.antibrute.attempts",
+      "type": "java.lang.Integer",
+      "description": "Unsuccessful authentication attempts count."
+    },
+    {
+      "name": "application.antibrute.ttl",
+      "type": "java.lang.Integer",
+      "description": "Failed authentication attempts (and locks) details TTL (in minutes)."
+    },
+    {
+      "name": "application.antibrute.cache.heap.size",
+      "type": "java.lang.Integer",
+      "description": "Default heap size for caches in anti-brute service."
+    },
+    {
+      "name": "application.newuser.balance",
+      "type": "java.math.BigDecimal",
+      "description": "USD Balance for newly created users."
+    },
+    {
+      "name": "application.withdraw.amount",
+      "type": "java.math.BigDecimal",
+      "description": "Default withdraw amount on payment endpoint."
+    },
+    {
+      "name": "application.session.tti",
+      "type": "java.lang.Integer",
+      "description": "Session time to Idle (in minutes)."
+    },
+    {
+      "name": "application.session.cache.heap.size",
+      "type": "java.lang.Integer",
+      "description": "Size of heap in sessions cache."
+    }
+  ]
+}
